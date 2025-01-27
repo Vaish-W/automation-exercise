@@ -16,7 +16,7 @@ jobs:
       - name: Install Black
         run: pip install black
       - name: Run Black
-        run: black --check . --exclude '.*\.(png|jpg|jpeg|gif|svg|ico)$'
+        run: black --check . --exclude '.*\.(png|jpg|jpeg|gif|svg|ico|bin)$'
 
   test:
     runs-on: ubuntu-latest
